@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+    border:8px solid rgb(45, 7, 13)
+}
+h2{
+    font-family: comic sans ms; 
+    background-color: #fff; 
+    text-align:center
+}
+table{
+    background:rgba(255, 255, 255, 0.8); 
+    
+}
+.td{
+    font-weight: bold
+}
