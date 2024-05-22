@@ -7,7 +7,7 @@
     <title>Data Mahasiswa</title>
 </head>
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'informatika');
+// $conn = mysqli_connect('localhost', 'root', '', 'informatika');
 ?>
 
 <body>
@@ -35,9 +35,19 @@ $conn = mysqli_connect('localhost', 'root', '', 'informatika');
                 <td width='5%'>:</td>
                 <td width='65%'><input type='text' name='alamat' size='40'></td>
                 </tr>
-            </form>
         </table>
         <input type='submit' value='Masukkan' name='submit'>
+        </form>
+
+        <?php
+        error_reporting(E_ALL ^ E_NOTICE);
+        $nim =  $_POST['nim'];
+        $nama =  $_POST['nama'];
+        $kelas =  $_POST['kelas'];
+        $alamat =  $_POST['alamat'];
+        $submit =  $_POST['submit'];
+        $input = "INSERT INTO Mahasiswa"
+        ?>
 
     </center>
 </body>

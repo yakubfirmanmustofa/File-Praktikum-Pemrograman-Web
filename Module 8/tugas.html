@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengambilan keputusan</title>
+  </head>
+  <body>
+    <h2>Pengambil Keputusan Nilai</h2>
+
+    <label for="nilai">Masukkan Nilai:</label>
+    <input type="number" id="nilai" />
+    <button onclick="hitungNilai()">Hitung</button>
+
+    <p id="hasil"></p>
+
+    <script>
+      function hitungNilai() {
+        var nilai = document.getElementById("nilai").value;
+        var hasil = document.getElementById("hasil");
+
+        if (nilai >= 0 && nilai <= 20) {
+          hasil.innerHTML = "Anda Mendapatkan Nilai : E";
+        } else if (nilai >= 21 && nilai <= 40) {
+          hasil.innerHTML = "Anda Mendapatkan Nilai : D";
+        } else if (nilai >= 41 && nilai <= 60) {
+          hasil.innerHTML = "Anda Mendapatkan Nilai : C";
+        } else if (nilai >= 61 && nilai <= 80) {
+          hasil.innerHTML = "Anda Mendapatkan Nilai : B";
+        } else if (nilai >= 81 && nilai <= 100) {
+          hasil.innerHTML = "Anda Mendapatkan Nilai : A";
+        } else {
+          hasil.innerHTML = alert("Mohon masukkan Nilai Yang Benar");
+          hasil.innerHTML = "Nilai Tidak Valid";
+        }
+      }
+    </script>
+  </body>
+</html>
